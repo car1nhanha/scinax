@@ -2,7 +2,7 @@
   <app-card>
     <div class="card-header">
       <h3>Sobre o evento</h3>
-      <span>Ao vivo</span>
+      <span><ng-icon name="lucideRadio" class="icon" /> Ao vivo</span>
     </div>
 
     <div class="body-text">
@@ -14,5 +14,19 @@
       </p>
       <p>Dias 15 a 17 de março | Das 18h às 21h | Online & Gratuito</p>
     </div>
+  </app-card>
+
+  <app-card class="registration">
+    <div class="card-header">
+      <h3>Inscrição</h3>
+    </div>
+    <div class="form-group">
+      <app-input iconName="lucideMail" placeholder="E-mail" />
+      <app-input iconName="lucidePhone" placeholder="Telefone" />
+    </div>
+    <button class="button-confirm">
+      <span>Confirmar</span>
+      <ng-icon name="lucideArrowRight" class="arrow" />
+    </button>
   </app-card>
 </app-default>

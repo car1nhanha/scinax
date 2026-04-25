@@ -1,0 +1,32 @@
+:host {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 14px 16px;
+  gap: 8px;
+
+  background: var(--gray-800);
+  border: 1px solid var(--gray-600);
+  border-radius: 10px;
+
+  .icon-input {
+    color: var(--gray-400);
+  }
+
+  span:has(+ input:focus) .icon-input {
+    color: var(--gray-100);
+    transition: 0.3s;
+  }
+
+  input {
+    all: unset;
+    width: 100%;
+    transition: 0.3s;
+
+    &::placeholder {
+      color: var(--gray-400);
+    }
+  }
+}

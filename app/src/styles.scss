@@ -3,7 +3,6 @@
   font-family: 'Oxanium', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: var(--gray-100);
 }
 
 :root {
@@ -13,6 +12,7 @@
   --gray-400: #6f7d90;
   --gray-500: #2a313c;
   --gray-700: #191d24;
+  --gray-800: #13161b;
   --gray-900: #0f1216;
 
   --blue: #6f9de2;
@@ -28,6 +28,7 @@ app-root {
 }
 
 body {
+  color: var(--gray-100);
   background: var(--gray-900);
   background-image: url('/bg.png');
   background-size: cover;
