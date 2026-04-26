@@ -1,0 +1,26 @@
+<app-default>
+  <div class="header">
+    <h3>Inscrição confirmada!</h3>
+    <p>
+      Convide mais pessoas e concorra a prêmios!<br />Compartilhe o link e acompanhe as inscrições:
+    </p>
+  </div>
+
+  <button class="link-share" (click)="shareLink()">
+    <ng-icon name="lucideLink" class="icon-share" />
+    <span class="link">{{ link }}</span>
+  </button>
+
+  <app-card>
+    <ng-icon name="lucideBadgeCheck" class="icon-confirmed" />
+
+    <div class="registrations">
+      <span>875</span>
+      <p>Inscrições feitas</p>
+    </div>
+  </app-card>
+</app-default>
+
+@if (showToast()) {
+  <app-toast message="Copy to clipboard"></app-toast>
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideArrowRight, lucideMail, lucidePhone, lucideRadio } from '@ng-icons/lucide';
 import { Card } from '../../atoms/card/card';
@@ -12,4 +13,10 @@ import { Default } from '../../templates/default/default';
   styleUrl: './home.scss',
   viewProviders: [provideIcons({ lucideRadio, lucideArrowRight, lucideMail, lucidePhone })],
 })
-export class Home {}
+export class Home {
+  private router = inject(Router);
+
+  goToConfirmed() {
+    this.router.navigate(['/confirmed']);
+  }
+}
