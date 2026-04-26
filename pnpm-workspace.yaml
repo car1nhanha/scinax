@@ -1,2 +1,8 @@
 packages:
-  - "app"
+  - app
+
+ignoredBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - lmdb
+  - msgpackr-extract
