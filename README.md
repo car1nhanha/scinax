@@ -55,6 +55,8 @@ Hoje o projeto possui:
 
 ```bash
 .
+├── .npmrc
+├── README.md
 ├── package.json
 ├── pnpm-lock.yaml
 ├── pnpm-workspace.yaml
@@ -65,12 +67,41 @@ Hoje o projeto possui:
     ├── public
     └── src
         ├── app
+        │   ├── app.config.ts
+        │   ├── app.html
+        │   ├── app.routes.ts
+        │   ├── app.scss
+        │   └── app.ts
         ├── components
         │   ├── atoms
+        │   │   ├── card
+        │   │   │   ├── card.html
+        │   │   │   ├── card.scss
+        │   │   │   └── card.ts
+        │   │   └── toast
+        │   │       ├── toast.html
+        │   │       ├── toast.scss
+        │   │       └── toast.ts
         │   ├── molecules
+        │   │   └── input
+        │   │       ├── input.html
+        │   │       ├── input.scss
+        │   │       └── input.ts
         │   ├── organisms
         │   ├── pages
+        │   │   ├── confirmed
+        │   │   │   ├── confirmed.html
+        │   │   │   ├── confirmed.scss
+        │   │   │   └── confirmed.ts
+        │   │   └── home
+        │   │       ├── home.html
+        │   │       ├── home.scss
+        │   │       └── home.ts
         │   └── templates
+        │       └── default
+        │           ├── default.html
+        │           ├── default.scss
+        │           └── default.ts
         ├── index.html
         ├── main.ts
         └── styles.scss

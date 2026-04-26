@@ -17,6 +17,6 @@ export class Home {
   private router = inject(Router);
 
   goToConfirmed() {
-    this.router.navigate(['/confirmed']);
+    this.router.navigate(['/confirmed/1234']);
   }
 }

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal } from '@angular/core';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import { lucideBadgeCheck, lucideLink } from '@ng-icons/lucide';
 import { Card } from '../../atoms/card/card';
@@ -13,7 +13,8 @@ import { Default } from '../../templates/default/default';
   viewProviders: [provideIcons({ lucideLink, lucideBadgeCheck })],
 })
 export class Confirmed {
-  link = 'devstage.com/codecraft-summit-2025/1289';
+  @Input({ required: true }) subscription!: string;
+  link = `thoropa.vercel.app/SD9vDvOaQ2`;
   showToast = signal(false);
 
   shareLink() {
